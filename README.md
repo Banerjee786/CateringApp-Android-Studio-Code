@@ -8,3 +8,7 @@ named 'DatabaseHelper.java'.
 Location of Java Files : //CateringApp-Android-Studio-Code/AppCatering/app/src/main/java/com/example/priya/appcatering/
 
 Location of XML Layouts (Screen Designs) : //CateringApp-Android-Studio-Code/AppCatering/app/src/main/res/layout/
+
+Android Manifest File : //CateringApp-Android-Studio-Code/AppCatering/app/src/main/AndroidManifest.xml
+
+

@@ -5,5 +5,6 @@ The Application is built using Android Studio (basically Java in this context), 
 The Software Engineering process of using a 'Singleton Pattern' has been used in the form of a Database Helper class 
 named 'DatabaseHelper.java'.
 
-Location of Java Files : //CateringApp-Android-Studio-Code/AppCatering/app/src/main/java/com/example/priya/appcatering/
-Location of XML Layouts (Screen Designs) : 
+#Location of Java Files : //CateringApp-Android-Studio-Code/AppCatering/app/src/main/java/com/example/priya/appcatering/
+
+#Location of XML Layouts (Screen Designs) : //CateringApp-Android-Studio-Code/AppCatering/app/src/main/res/layout/

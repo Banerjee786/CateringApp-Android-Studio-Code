@@ -11,4 +11,6 @@ Location of XML Layouts (Screen Designs) : //CateringApp-Android-Studio-Code/App
 
 Android Manifest File : //CateringApp-Android-Studio-Code/AppCatering/app/src/main/AndroidManifest.xml
 
+strings.xml File : //CateringApp-Android-Studio-Code/AppCatering/app/src/main/res/values/strings.xml
+
 

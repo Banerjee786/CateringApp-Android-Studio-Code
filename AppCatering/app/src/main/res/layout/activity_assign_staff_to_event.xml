@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.priya.appcatering.AssignStaffToEvent">
+
+    <TextView
+        android:id="@+id/assignstaff_title"
+        android:layout_width="281dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="43dp"
+        android:text="Assign Staff to Event"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="51dp"
+        android:layout_marginLeft="52dp" />
+
+    <TextView
+        android:id="@+id/assignstaff_eventname_textview"
+        android:layout_width="58dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="21dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assignstaff_title" />
+
+    <TextView
+        android:id="@+id/noofstaff_textview"
+        android:layout_width="176dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="171dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="52dp"
+        android:text="Catering Staff Name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assignstaff_eventname_textview" />
+
+    <EditText
+        android:id="@+id/assignstaff_plaintext"
+        android:layout_width="215dp"
+        android:layout_height="46dp"
+        android:layout_marginRight="132dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Staff Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noofstaff_textview" />
+
+    <Button
+        android:id="@+id/assignstaff_button"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="55dp"
+        android:text="assign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assignstaff_plaintext" />
+
+    <Button
+        android:id="@+id/assignstaff_logout"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginStart="148dp"
+        android:text="logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

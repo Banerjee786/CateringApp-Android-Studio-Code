@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.priya.appcatering.CatererEventList">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="208dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/caterer_event_list_fuctionpage"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/schedule_a_place_eventlist_page_button"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/schedule_a_place_fuctionpage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/view_event_detail_function_page_button"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/view_event_detail_fuctionpage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedule_a_place_eventlist_page_button" />
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="70dp"
+        android:text="@string/logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/EventName_EventList_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginBottom="42dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/schedule_a_place_eventlist_page_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/Caterer_DeleteEvent_button"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:text="delete event"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_event_detail_function_page_button" />
+
+    <Button
+        android:id="@+id/assignStaff_eventlist_button"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:text="assign staff to Event"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Caterer_DeleteEvent_button" />
+
+    <Button
+        android:id="@+id/addResources_eventlist_button"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:text="add resources to event"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assignStaff_eventlist_button" />
+</android.support.constraint.ConstraintLayout>

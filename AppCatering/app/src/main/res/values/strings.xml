@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">AppCatering</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="login_id">Login ID</string>
+    <string name="password">Password</string>
+    <string name="home_page">Homepage</string>
+    <string name="create_request">Create Event Request</string>
+    <string name="view_events">View My Events</string>
+    <string name="cancel_my_events">Cancel My Events</string>
+    <string name="all_events">View Schedule of All Events</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="log_out">Logout</string>
+    <string name="event_creation">Request an Event</string>
+    <string name="title_activity_eventcreate">Eventcreate</string>
+    <string name="event_request_title"> </string>
+    <string name="event_name">Event Name</string>
+    <string name="party_size">Size of Party</string>
+    <string name="event_date">Date of Event (MM-DD-YY)</string>
+    <string name="event_time">Event Start Time (HH:MM)</string>
+    <string name="event_duration">Event Duration (in hours)</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="supper">Supper</string>
+    <string name="mealtype">Meal Type</string>
+    <string name="meal_venue">Meal Venue</string>
+    <string-array name="meal_venue_array">
+        <item>American</item>
+        <item>Chinese</item>
+        <item>French</item>
+        <item>Greek</item>
+        <item>Indian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Mexican</item>
+        <item>Pizza</item>
+    </string-array>
+    <string name="mealformality">Meal Formality</string>
+    <string name="event_venue">Event Venue</string>
+    <string name="formal">Formal</string>
+    <string name="informal">Informal</string>
+    <string name="drinkvenue">Drink Venue</string>
+    <string name="alcohol">Alcohol</string>
+    <string name="non_alcohol">Non-Alcohol</string>
+    <string name="event_request_submit">Submit</string>
+    <string name="cancel_event">Cancel Event</string>
+    <string name="meal_type">Meal Type</string>
+    <string name="event_name_value"></string>
+    <string name="party_size_value"></string>
+    <string name="event_date_value"></string>
+    <string name="event_time_value"></string>
+    <string name="event_duration_value"></string>
+    <string name="meal_type_value"></string>
+    <string name="meal_venue_value"></string>
+    <string name="meal_formality_value"></string>
+    <string name="drinkvenue_value"></string>
+    <string name="event_venue_value"></string>
+    <string name="event_summary_title"> </string>
+    <string-array name="UserRoleDropDown">
+        <item>User</item>
+        <item>Caterer</item>
+        <item>Caterer Staff</item>
+        <item>Admin</item>
+    </string-array>
+    <string-array name="RoleRegtrnScreen">
+        <item>User</item>
+        <item>Caterer</item>
+        <item>Caterer Staff</item>
+    </string-array>
+    <string name="welcome_caterer">Welcome Caterer!</string>
+    <string name="caterer_event_list">caterer event list</string>
+    <string name="caterer_function_list">caterer function list</string>
+    <string name="logout">logout</string>
+    <string name="caterer_event_list_fuctionpage">Caterer Event List</string>
+    <string name="schedule_a_place_fuctionpage">schedule a place</string>
+    <string name="view_event_detail_fuctionpage">view event detail</string>
+    <string name="caterer_event_list_enterpage">Caterer Event List</string>
+    <string name="enter_an_event_to_continue">Enter an event to continue</string>
+    <string name="go">go!</string>
+    <string name="textview_EventDetail">TextView</string>
+</resources>

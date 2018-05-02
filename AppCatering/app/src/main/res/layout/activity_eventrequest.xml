@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.priya.appcatering.Eventrequest">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="590dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp">
+
+        <EditText
+            android:id="@+id/event_name"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:hint="@string/event_name"
+            android:inputType="textPersonName"
+            android:labelFor="@+id/event_name"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.106"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/party_size"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/party_size"
+            android:inputType="numberDecimal"
+            android:labelFor="@+id/party_size"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_name" />
+
+        <EditText
+            android:id="@+id/event_date"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/event_date"
+            android:inputType="date|text"
+            android:labelFor="@+id/event_date"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/party_size" />
+
+        <EditText
+            android:id="@+id/event_time"
+            android:layout_width="230dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/event_time"
+            android:inputType="date|time"
+            android:labelFor="@+id/event_time"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_date" />
+
+        <EditText
+            android:id="@+id/event_duration"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/event_duration"
+            android:inputType="text"
+            android:labelFor="@+id/event_duration"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.074"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_time" />
+
+        <TextView
+            android:id="@+id/mealtype"
+            android:layout_width="135dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/mealtype"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_duration" />
+
+        <RadioGroup
+            android:id="@+id/mealtyperadio"
+            android:layout_width="291dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:orientation="horizontal"
+            android:text="@string/event_duration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.098"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mealtype">
+
+            <RadioButton
+                android:id="@+id/breakfast"
+                android:layout_width="108dp"
+                android:layout_height="33dp"
+                android:text="@string/breakfast"
+                android:textColor="@android:color/black"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="325dp" />
+
+            <RadioButton
+                android:id="@+id/lunch"
+                android:layout_width="85dp"
+                android:layout_height="34dp"
+                android:text="@string/lunch"
+                android:textColor="@android:color/black"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="365dp" />
+
+            <RadioButton
+                android:id="@+id/supper"
+                android:layout_width="91dp"
+                android:layout_height="34dp"
+                android:text="@string/supper"
+                android:textColor="@android:color/black"
+                tools:layout_editor_absoluteX="60dp"
+                tools:layout_editor_absoluteY="325dp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/meal_venue"
+            android:layout_width="135dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/meal_venue"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mealtyperadio" />
+
+        <Spinner
+            android:id="@+id/meal_venue_array"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.123"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meal_venue" />
+
+        <TextView
+            android:id="@+id/mealformality"
+            android:layout_width="135dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/mealformality"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meal_venue_array" />
+
+        <RadioGroup
+            android:id="@+id/mealformalityradio"
+            android:layout_width="213dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:orientation="horizontal"
+            android:text="@string/event_duration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mealformality">
+
+            <RadioButton
+                android:id="@+id/formal"
+                android:layout_width="108dp"
+                android:layout_height="33dp"
+                android:text="@string/formal"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="325dp" />
+
+            <RadioButton
+                android:id="@+id/informal"
+                android:layout_width="102dp"
+                android:layout_height="match_parent"
+                android:text="@string/informal"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="365dp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/drinkvenue"
+            android:layout_width="135dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/drinkvenue"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintBottom_toTopOf="@+id/drinkvenueradio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mealformalityradio" />
+
+        <RadioGroup
+            android:id="@+id/drinkvenueradio"
+            android:layout_width="251dp"
+            android:layout_height="37dp"
+            android:layout_marginBottom="52dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:orientation="horizontal"
+            android:text="@string/event_duration"
+            app:layout_constraintBottom_toTopOf="@+id/event_request_submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.086"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <RadioButton
+                android:id="@+id/alcohol"
+                android:layout_width="108dp"
+                android:layout_height="33dp"
+                android:text="@string/alcohol"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="425dp" />
+
+            <RadioButton
+                android:id="@+id/non_alcohol"
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:text="@string/non_alcohol"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="365dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/event_request_submit"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="688dp"
+            android:text="@string/event_request_submit"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/event_request_title"
+            android:layout_width="340dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/event_request_title"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/event_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/home_page"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="96dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/home_page"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_request_submit" />
+
+        <Button
+            android:id="@+id/log_out"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="92dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/log_out"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_request_submit" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.priya.appcatering.Eventrequest">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="590dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp">
+
+        <TextView
+            android:id="@+id/event_summary_title"
+            android:layout_width="340dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/event_summary_title"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/event_name"
+            android:layout_width="169dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="66dp"
+            android:text="@string/event_name"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/event_name_value"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/event_name_value"
+            android:layout_width="250dp"
+            android:layout_height="27dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginRight="64dp"
+            android:layout_marginTop="66dp"
+            android:text="@string/event_name_value"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/party_size"
+            android:layout_width="169dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/party_size"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/party_size_value"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_name" />
+
+        <TextView
+            android:id="@+id/party_size_value"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/party_size_value"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_name_value"
+            android:layout_marginRight="64dp" />
+
+        <TextView
+            android:id="@+id/event_date"
+            android:layout_width="169dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/event_date"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/event_date_value"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/party_size" />
+
+        <TextView
+            android:id="@+id/event_date_value"
+            android:layout_width="250dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/event_date_value"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/party_size_value"
+            android:layout_marginRight="64dp" />
+
+        <TextView
+            android:id="@+id/event_time"
+            android:layout_width="169dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/event_time"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/event_time_value"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_date" />
+
+        <TextView
+            android:id="@+id/event_time_value"
+            android:layout_width="250dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/event_time_value"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_date_value"
+            android:layout_marginRight="64dp" />
+
+        <TextView
+            android:id="@+id/event_duration"
+            android:layout_width="169dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/event_duration"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/event_time_value"
+            app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_time" />
+
+        <TextView
+            android:id="@+id/event_duration_value"
+            android:layout_width="250dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/event_duration_value"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_time_value"
+            android:layout_marginRight="64dp" />
+
+        <TextView
+            android:id="@+id/meal_type"
+            android:layout_width="169dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/meal_type"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/meal_type_value"
+            app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_duration" />
+
+        <TextView
+            android:id="@+id/meal_type_value"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/party_size_value"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_duration_value"
+            android:layout_marginRight="64dp" />
+
+        <TextView
+            android:id="@+id/meal_venue"
+            android:layout_width="169dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/meal_venue"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/meal_venue_value"
+            app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meal_type" />
+
+        <TextView
+            android:id="@+id/meal_venue_value"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/meal_venue_value"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meal_type_value"
+            android:layout_marginRight="64dp" />
+
+        <TextView
+            android:id="@+id/mealformality"
+            android:layout_width="169dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/mealformality"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/meal_formality_value"
+            app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meal_venue" />
+
+        <TextView
+            android:id="@+id/meal_formality_value"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/meal_formality_value"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meal_venue_value"
+            android:layout_marginRight="64dp" />
+
+        <TextView
+            android:id="@+id/drinkvenue"
+            android:layout_width="169dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/drinkvenue"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/drinkvenue_value"
+            app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mealformality" />
+
+        <TextView
+            android:id="@+id/drinkvenue_value"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/drinkvenue_value"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meal_formality_value"
+            android:layout_marginRight="64dp" />
+
+        <TextView
+            android:id="@+id/event_venue"
+            android:layout_width="169dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/event_venue"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/event_venue_value"
+            app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/drinkvenue" />
+
+        <TextView
+            android:id="@+id/event_venue_value"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/event_venue_value"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/drinkvenue_value"
+            android:layout_marginRight="64dp" />
+
+        <Button
+            android:id="@+id/cancel_event"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="628dp"
+            android:text="@string/cancel_event"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/home_page"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="84dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/home_page"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cancel_event" />
+
+        <Button
+            android:id="@+id/log_out"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="84dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/log_out"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cancel_event" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

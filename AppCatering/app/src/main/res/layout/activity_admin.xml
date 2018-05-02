@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.priya.appcatering.AdminActivity">
+
+    <Button
+        android:id="@+id/btnRevRegScreen_admin"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="48dp"
+        android:text="Review New Registration Request"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHello_admin" />
+
+    <Button
+        android:id="@+id/btnReviewProfile_admin"
+        android:layout_width="256dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="64dp"
+        android:text="Review User Profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRevRegScreen_admin" />
+
+    <Button
+        android:id="@+id/btnUpdateProfile_admin"
+        android:layout_width="250dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="68dp"
+        android:text="Update Non-admin User Profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReviewProfile_admin" />
+
+    <Button
+        android:id="@+id/btnDeleteAccount_admin"
+        android:layout_width="250dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="16dp"
+        android:text="Delete User Account"
+        app:layout_constraintBottom_toTopOf="@+id/btnLOGOUT_admin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdateProfile_admin"
+        app:layout_constraintVertical_bias="0.27" />
+
+    <Button
+        android:id="@+id/btnLOGOUT_admin"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="124dp"
+        android:layout_marginLeft="140dp"
+        android:text="Log out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHello_admin"
+        android:layout_width="176dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="32dp"
+        android:text="Hello Admin !"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

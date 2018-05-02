@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.priya.appcatering.CatererSchedulePlaceForEvent">
+
+    <TextView
+        android:id="@+id/scheduleplaceforeventTile_textview"
+        android:layout_width="332dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        android:text="Schedule Place for event"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scheduleplace_eventname_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="172dp"
+        android:layout_marginLeft="154dp"
+        android:layout_marginTop="34dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scheduleplaceforeventTile_textview" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="123dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="215dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="39dp"
+        android:text="Enter hall name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scheduleplace_eventname_textview" />
+
+    <EditText
+        android:id="@+id/Scheduleplace_hallname_plaintext"
+        android:layout_width="215dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Hall Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:layout_marginLeft="39dp"
+        android:layout_marginRight="130dp" />
+
+    <Button
+        android:id="@+id/Scheduleplace_assign_button"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="70dp"
+        android:text="assign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Scheduleplace_hallname_plaintext" />
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="58dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginStart="148dp"
+        android:text="LOGOUT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

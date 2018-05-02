@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.priya.appcatering.EventNameEnterPage">
+
+    <TextView
+        android:id="@+id/caterer_event_list_enter_page_text_view"
+        android:layout_width="200dp"
+        android:layout_height="73dp"
+        android:layout_marginRight="168dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/caterer_event_list_enterpage"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Enter_an_event_to_continue_enter_page_text_view"
+        android:layout_width="216dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="144dp"
+        android:text="@string/enter_an_event_to_continue"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="136dp" />
+
+    <EditText
+        android:id="@+id/EnterEventName_enterpage_plaintext"
+        android:layout_width="215dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/event_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Enter_an_event_to_continue_enter_page_text_view" android:layout_marginStart="24dp" />
+
+    <Button
+        android:id="@+id/gobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        android:layout_marginLeft="134dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="48dp"
+        android:text="GO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EnterEventName_enterpage_plaintext" />
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginRight="158dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginLeft="138dp"
+        android:layout_marginTop="60dp"
+        android:text="LOGOUT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gobutton" />
+</android.support.constraint.ConstraintLayout>
